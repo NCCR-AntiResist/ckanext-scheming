@@ -36,6 +36,7 @@ dataset_fields:
     label: Published
   - value: archived
     label: Archived
+  help_text: "Collected" status means the dataset is available for use within the NCCR AntiResist.
 
 - field_name: category
   label: Category
@@ -66,12 +67,28 @@ dataset_fields:
     label: Metabolomics
   - value: other
     label: Other
+  help_text: If you have a common data type you would like added to this list, please contact the RDO.
+
+- field_name: microbe
+  label: Microbial Species
+  preset: multiple_select
+  choices:
+  - value: ecoli
+    label: Escherichia coli
+  - value: paeruginosa
+    label: Pseudomonas aeruginosa
+  - value: saureus
+    label: Staphylococcus aureus
+  - value: bmelitensis
+    label: Brucella melitensis
+  - value: other
+    label: Other
     
 - field_name: work_package
   label: Work Package
   required: true
   form_include_blank_choice: true
-  preset: select
+  preset: multiple_select
   choices:
   - value: wp-eco
     label: WP-ECO
@@ -102,29 +119,26 @@ dataset_fields:
   preset: dataset_organization
 
 - field_name: author
-  label: Author
+  label: Authors
+  form_placeholder: Name
+  preset: multiple_text
+
+- field_name: submitter
+  required: true
+  label: Submitter
   form_placeholder: Name
   display_property: dc:creator
-
-- field_name: author_email
-  label: Author Email
-  form_placeholder: Email
-  display_property: dc:creator
-  display_snippet: email.html
-  display_email_name_field: author
 
 - field_name: maintainer
   label: Maintainer
   form_placeholder: Name
   display_property: dc:contributor
 
-- field_name: maintainer_email
-  label: Maintainer Email
+- field_name: contact_email
+  label: Contact Email
   form_placeholder: Email
-  display_property: dc:contributor
   display_snippet: email.html
-  display_email_name_field: maintainer
-
+  
 
 resource_fields:
 
