@@ -36,7 +36,7 @@ dataset_fields:
     label: Published
   - value: archived
     label: Archived
-  help_text: "Collected" status means the dataset is available for use within the NCCR AntiResist.
+  help_text: '"Collected" status means the dataset is available for use within the NCCR AntiResist.'
 
 - field_name: category
   label: Category
