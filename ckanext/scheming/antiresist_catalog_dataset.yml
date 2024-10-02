@@ -97,16 +97,24 @@ dataset_fields:
     label: WP-SAU
   - value: wp-bme
     label: WP-BME
+  - value: wp-mod-tis
+    label: WP-MOD Tissue
+  - value: wp-mod-axe
+    label: WP-MOD Axenic
+  - value: wp-trn-tis
+    label: WP-TRN Tissue
+  - value: wp-trn-axe
+    label: WP-TRN Axenic
   - value: wp-cln
-    label: WP-CLN
+    label: WP-CLN (Phase 1)
   - value: wp-mod
-    label: WP-MOD
+    label: WP-MOD (Phase 1)
   - value: wp-trn
-    label: WP-TRN
+    label: WP-TRN (Phase 1)
   - value: wp-tec
-    label: WP-TEC
+    label: WP-TEC (Phase 1)
   - value: wp-dat
-    label: WP-DAT
+    label: WP-DAT (Phase 1)
   help_text: Hold down the Control (Windows) or Command (Mac) key to select multiple items.
     
 - field_name: tag_string
